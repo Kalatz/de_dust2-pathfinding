@@ -1,6 +1,8 @@
 # de_dust2-pathfinding
 This was a project for my Master's. It includes pre-prossecing on the Counter Strike: Global Offensive map de_dust2 followed by multiple pathfinding algorithms.
 
+The original image of the map can be found in the URL: https://readtldr.gg/simpleradar.
+
 The first step was importing the map and transforming it to an occupancy grid map (OGM). Then BrushFire algorithm was used to help us with the next step.
 
 The second step was equipping the map with a uniform probabilistic road map (PRM) and a random one. After this the pathfinding algorithm where use on random point on the map.
