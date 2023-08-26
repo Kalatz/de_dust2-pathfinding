@@ -2,7 +2,7 @@
 This was a project for my Master's. It includes pre-prossecing on the Counter Strike: Global Offensive map de_dust2 followed by multiple pathfinding algorithms.
 
 The original image of the map can be found in the URL: https://readtldr.gg/simpleradar.
-## Original Map
+### Original Map
 ![Alt text](https://github.com/Kalatz/de_dust2-pathfinding/blob/main/Plots/De_dust2%20original%20image.png)
 
 
