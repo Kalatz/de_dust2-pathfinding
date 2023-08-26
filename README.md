@@ -7,9 +7,9 @@ The original image of the map can be found in the URL: https://readtldr.gg/simpl
 
 
 The first step was importing the map and transforming it to an occupancy grid map (OGM). Then BrushFire algorithm was used to help us with the next step.
-# Occupancy grid map
+### Occupancy grid map
 ![Alt text](https://github.com/Kalatz/de_dust2-pathfinding/blob/main/Plots/OGM.png)
-# BrushFire
+### BrushFire
 ![Alt text](https://github.com/Kalatz/de_dust2-pathfinding/blob/main/Plots/BrushFire.png)
 
 The second step was equipping the map with a uniform probabilistic road map (PRM) and a random one. After this the pathfinding algorithm where use on random point on the map.
