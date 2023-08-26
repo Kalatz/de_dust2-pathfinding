@@ -2,6 +2,7 @@
 This was a project for my Master's. It includes pre-prossecing on the Counter Strike: Global Offensive map de_dust2 followed by multiple pathfinding algorithms.
 
 The original image of the map can be found in the URL: https://readtldr.gg/simpleradar.
+![Alt text](https://github.com/Kalatz/de_dust2-pathfinding/blob/main/De_dust2%20original%20image.png)
 
 The first step was importing the map and transforming it to an occupancy grid map (OGM). Then BrushFire algorithm was used to help us with the next step.
 
