@@ -38,7 +38,26 @@ The second step was equipping the map with a uniform probabilistic road map (PRM
 ### Random PRM
 ![Alt text](https://github.com/Kalatz/de_dust2-pathfinding/blob/main/Plots/Random%20PRM.png)
 
+## Dijkstra & A*
+
+- Applie `dijkstra` and `a_star` on both PRMs
+
+- The path is visible in the plot (blue dots)
+
+- The expansions (searches) are visible in the plot (red lines)
+  
 Step three, Dijkstra and A* are executed on the PRMs and plotted showing the searched area (red lines) by the algorithm and the final path it found (blue dots). Every step of the algorithms can be seen by a single tweak in the code.
+
+### Dijkstra
+#### Uniform PRM
+![Alt text](https://github.com/Kalatz/de_dust2-pathfinding/blob/main/Plots/Dijkstra%20uniform%20PRM.png)
+#### Random PRM
+![Alt text](https://github.com/Kalatz/de_dust2-pathfinding/blob/main/Plots/Dijkstra%20random%20PRM.png)
+### A*
+#### Uniform PRM
+![Alt text](https://github.com/Kalatz/de_dust2-pathfinding/blob/main/Plots/A.png)
+#### Random PRM
+![Alt text](https://github.com/Kalatz/de_dust2-pathfinding/blob/main/Plots/A%20random.png)
 
 Step four, rapidly-expanding random trees (RRT) and rapidly-expanding random trees star (RRT*) were used straight on the OGM to connect the goal with the start node. As in the previous step area visited and found path can be seen on the plots.
 
