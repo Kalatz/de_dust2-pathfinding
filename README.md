@@ -48,17 +48,49 @@ The second step was equipping the map with a uniform probabilistic road map (PRM
   
 Step three, Dijkstra and A* are executed on the PRMs and plotted showing the searched area (red lines) by the algorithm and the final path it found (blue dots). Every step of the algorithms can be seen by a single tweak in the code.
 
-### Dijkstra
-#### Uniform PRM
+### Dijkstra Uniform PRM
 ![Alt text](https://github.com/Kalatz/de_dust2-pathfinding/blob/main/Plots/Dijkstra%20uniform%20PRM.png)
-#### Random PRM
+### Dijkstra Random PRM
 ![Alt text](https://github.com/Kalatz/de_dust2-pathfinding/blob/main/Plots/Dijkstra%20random%20PRM.png)
-### A*
-#### Uniform PRM
+### A* Uniform PRM
 ![Alt text](https://github.com/Kalatz/de_dust2-pathfinding/blob/main/Plots/A.png)
-#### Random PRM
+### A* Random PRM
 ![Alt text](https://github.com/Kalatz/de_dust2-pathfinding/blob/main/Plots/A%20random.png)
 
+## Rapidly-expaning Random Tree (RRT) and Rapidly-expaning Random Tree Star(RRT*)
+
+- the RRT algorithm does not use the graph
+
+- instead makes a new (random) path inside the empty space
+  
+- For the RRT* the way of expansion is a little different resulting on combed looking tree
+
+- RRT* algorithm has the choise of running for double the duration for an even more "combed" tree
+  
 Step four, rapidly-expanding random trees (RRT) and rapidly-expanding random trees star (RRT*) were used straight on the OGM to connect the goal with the start node. As in the previous step area visited and found path can be seen on the plots.
 
+### RRT
+![Alt text](https://github.com/Kalatz/de_dust2-pathfinding/blob/main/Plots/RRT.png)
+### RRT*
+![Alt text](https://github.com/Kalatz/de_dust2-pathfinding/blob/main/Plots/RRT%20star.png)
+
+## Path smoothing
+
+- Makes the path smoother to allow for model restrictions
+
+- Attenion is needed so the new path does not overlap with objecles
+  
 Lastly, path smoothing is applied in every path found by the algorithms with care, so none of the points end up outside the bound of the map.
+
+### Dijkstra Uniform PRM Smooth Path
+![Alt text](https://github.com/Kalatz/de_dust2-pathfinding/blob/main/Plots/Pathsmooth%20dijkstra.png)
+### Dijkstra Random PRM Smooth Path
+![Alt text](https://github.com/Kalatz/de_dust2-pathfinding/blob/main/Plots/Pathsmooth%20dijkstra%20rand.png)
+### A* Uniform PRM Smooth Path
+![Alt text](https://github.com/Kalatz/de_dust2-pathfinding/blob/main/Plots/Pathsmooth%20A.png)
+### A* Random PRM Smooth Path
+![Alt text](https://github.com/Kalatz/de_dust2-pathfinding/blob/main/Plots/Pathsmooth%20A%20rand.png)
+### RRT Smooth Path
+![Alt text](https://github.com/Kalatz/de_dust2-pathfinding/blob/main/Plots/Pathsmooth%20RRT.png)
+### RRT* Smooth Path
+![Alt text](https://github.com/Kalatz/de_dust2-pathfinding/blob/main/Plots/Pathsmooth%20RRT%20star.png)
