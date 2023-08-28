@@ -1,5 +1,5 @@
 # de_dust2-pathfinding
-This was a project for my Master's. It includes pre-prossecing on the Counter Strike: Global Offensive map de_dust2 followed by multiple pathfinding algorithms.
+This was a project for my Master's. It includes pre-processing on the Counter Strike: Global Offensive map de_dust2 followed by multiple pathfinding algorithms.
 
 The original image of the map can be found in the URL: https://readtldr.gg/simpleradar.
 ### Original Map
@@ -40,7 +40,7 @@ The second step was equipping the map with a uniform probabilistic road map (PRM
 
 ## Dijkstra & A*
 
-- Applie `dijkstra` and `a_star` on both PRMs
+- Applied `dijkstra` and `a_star` on both PRMs
 
 - The path is visible in the plot (blue dots)
 
@@ -57,7 +57,7 @@ Step three, Dijkstra and A* are executed on the PRMs and plotted showing the sea
 ### A* Random PRM
 ![Alt text](https://github.com/Kalatz/de_dust2-pathfinding/blob/main/Plots/A%20random.png)
 
-## Rapidly-expaning Random Tree (RRT) and Rapidly-expaning Random Tree Star(RRT*)
+## Rapidly-expanding Random Tree (RRT) and Rapidly-expanding Random Tree Star(RRT*)
 
 - the RRT algorithm does not use the graph
 
@@ -65,7 +65,7 @@ Step three, Dijkstra and A* are executed on the PRMs and plotted showing the sea
   
 - For the RRT* the way of expansion is a little different resulting on combed looking tree
 
-- RRT* algorithm has the choise of running for double the duration for an even more "combed" tree
+- RRT* algorithm has the choice of running for double the duration for an even more "combed" tree
   
 Step four, rapidly-expanding random trees (RRT) and rapidly-expanding random trees star (RRT*) were used straight on the OGM to connect the goal with the start node. As in the previous step area visited and found path can be seen on the plots.
 
@@ -78,7 +78,7 @@ Step four, rapidly-expanding random trees (RRT) and rapidly-expanding random tre
 
 - Makes the path smoother to allow for model restrictions
 
-- Attenion is needed so the new path does not overlap with objecles
+- Attention is needed so the new path does not overlap with obstacles
   
 Lastly, path smoothing is applied in every path found by the algorithms with care, so none of the points end up outside the bound of the map.
 
@@ -95,9 +95,9 @@ Lastly, path smoothing is applied in every path found by the algorithms with car
 ### RRT* Smooth Path
 ![Alt text](https://github.com/Kalatz/de_dust2-pathfinding/blob/main/Plots/Pathsmooth%20RRT%20star.png)
 
-### Observations:
+### Observations
 - The algorithms take much longer to run on the random graph. That is normal due to its size.
 
--  Something i found very interesting is that the path searched area (red lines) on the random PRM look awfully similar with the RRT searched area.
+-  Something I found very interesting is that the path searched area (red lines) on the random PRM look awfully similar with the RRT searched area.
 
--  RRT algorithms take longer to run which is normal considering the way new expansions are chossen an how many are rejected.
+-  RRT algorithms take longer to run which is normal considering the way new expansions are chosen and how many are rejected.
