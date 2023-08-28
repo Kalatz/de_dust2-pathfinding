@@ -94,3 +94,10 @@ Lastly, path smoothing is applied in every path found by the algorithms with car
 ![Alt text](https://github.com/Kalatz/de_dust2-pathfinding/blob/main/Plots/Pathsmooth%20RRT.png)
 ### RRT* Smooth Path
 ![Alt text](https://github.com/Kalatz/de_dust2-pathfinding/blob/main/Plots/Pathsmooth%20RRT%20star.png)
+
+###Observations:
+- The algorithms take much longer to run on the random graph. That is normal due to its size.
+
+-  Something i found very interesting is that the path searched area (red lines) on the random PRM look awfully similar with the RRT searched area.
+
+-  RRT algorithms take longer to run which is normal considering the way new expansions are chossen an how many are rejected.
