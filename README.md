@@ -1,4 +1,4 @@
-# de_dust2-pathfinding
+# de_dust2 Pathfinding
 This was a project for my Master's. It includes pre-processing on the Counter Strike: Global Offensive map de_dust2 followed by multiple pathfinding algorithms.
 
 The original image of the map can be found in the URL: https://readtldr.gg/simpleradar.
