@@ -59,11 +59,11 @@ Step three, Dijkstra and A* are executed on the PRMs and plotted showing the sea
 
 ## Rapidly-expanding Random Tree (RRT) and Rapidly-expanding Random Tree Star(RRT*)
 
-- the RRT algorithm does not use the graph
+- the `RRT` algorithm does not use the graph
 
 - instead makes a new (random) path inside the empty space
   
-- For the RRT* the way of expansion is a little different resulting on combed looking tree
+- For the `RRT*` the way of expansion is a little different resulting on combed looking tree
 
 - RRT* algorithm has the choice of running for double the duration for an even more "combed" tree
   
